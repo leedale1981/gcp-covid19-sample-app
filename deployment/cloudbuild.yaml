@@ -1,0 +1,13 @@
+steps:
+  # Auth Service Image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/cov19-sample-project/auth-service:latest', './services/authentication-service/cov19.services.auth']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/cov19-sample-project/auth-service:latest']
+  # Deploy Kubernetes Configuration
+  - name: 'gcr.io/cloud-builders/kubectl'
+    id: Deploy
+    args:
+    - 'apply'
+    - '-f'
+    - './kubernetes/auth-service.yaml'
