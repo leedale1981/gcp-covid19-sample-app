@@ -11,3 +11,7 @@ steps:
     - 'apply'
     - '-f'
     - './kubernetes/auth-service.yaml'
+    env:
+      - 'CLOUDSDK_COMPUTE_REGION=europe-west2'
+      - 'CLOUDSDK_COMPUTE_ZONE=europe-west2-a'
+      - 'CLOUDSDK_CONTAINER_CLUSTER=c19-sample-web-services-cluster'
