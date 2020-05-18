@@ -1,0 +1,4 @@
+steps:
+    - name: 'gcr.io/cloud-builders/docker'
+      args: ['build', '-t', 'gcr.io/cov19-sample-project/auth-service:latest', '.']
+    images: ['gcr.io/cov19-sample-project/auth-service:latest']
