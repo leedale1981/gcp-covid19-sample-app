@@ -1,0 +1,1 @@
+![alt text](https://github.com/leedale1981/gcp-covid19-sample-app/blob/master/architecture/Covid19-Sample-App.jpg "Architecture Diagram")
