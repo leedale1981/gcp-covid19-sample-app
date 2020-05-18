@@ -1,0 +1,1 @@
+gcloud container clusters create c19-sample-web-services-cluster --zone europe-west2-a --machine-type=f1-micro --labels=app=
