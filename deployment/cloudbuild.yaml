@@ -10,7 +10,7 @@ steps:
     args:
     - 'apply'
     - '-f'
-    - './kubernetes/auth-service.yaml'
+    - './deployment/kubernetes/auth-service.yaml'
     env:
       - 'CLOUDSDK_COMPUTE_REGION=europe-west2-a'
       - 'CLOUDSDK_COMPUTE_ZONE=europe-west2-a'
