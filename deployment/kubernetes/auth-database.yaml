@@ -1,0 +1,70 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: auth-postgres-config
+  labels:
+    app: auth-postgres
+data:
+  POSTGRES_DB: auth-postgresdb
+  POSTGRES_USER: postgresadmin
+  POSTGRES_PASSWORD: admin123
+---
+  apiVersion: v1
+  kind: Service
+  metadata:
+    name: auth-database-load-balancer
+    labels:
+      app: auth-postgres
+  spec:
+    selector:
+      app: auth-postgres
+    ports:
+      - port: 5432
+    type: NodePort
+---
+  apiVersion: v1
+  kind: PersistentVolumeClaim
+  metadata:
+    name: postgresdb-pvc
+    labels:
+      app: auth-postgres
+  spec:
+    accessModes:
+      - ReadWriteOnce
+    resources:
+      requests:
+        storage: 3Gi
+---
+  apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    name: auth-database
+    labels:
+      app: auth-postgres
+  spec:
+    replicas: 1
+    selector:
+      matchLabels:
+        app: auth-postgres
+    template:
+      metadata:
+        labels:
+          app: auth-postgres
+      spec:
+        containers:
+        - name: postgres
+          image: postgres:latest
+          envFrom:
+            - configMapRef:
+                name: auth-postgres-config
+          ports:
+          - containerPort: 5432
+            name: postgredb
+          volumeMounts:
+          - name: postgresdb-pv
+            mountPath: /var/lib/postgresql/data
+            subPath: postgres
+        volumes:
+        - name: postgresdb-pv
+          persistentVolumeClaim:
+            claimName: postgresdb-pvc
