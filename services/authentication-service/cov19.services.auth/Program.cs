@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace cov19.services.auth
+namespace COV19.Services.Auth
 {
     public class Program
     {

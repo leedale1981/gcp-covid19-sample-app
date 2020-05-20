@@ -1,17 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.IO;
 using System.Threading.Tasks;
+using COV19.Services.Data.Factories;
+using COV19.Services.Domain;
+using COV19.Services.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using Serilog;
 
-namespace cov19.services.auth
+namespace COV19.Services.Auth
 {
     public class Startup
     {
@@ -25,6 +24,34 @@ namespace cov19.services.auth
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            ILogger logger = new LoggerConfiguration().WriteTo.Console().CreateLogger();
+            IConfigurationRoot config = Startup.GetConfiguration();
+            IQueryFactory<ClientRegistration> clientRegistrationQueryFactory = new ClientRegistrationQueryFactory(
+                logger, config.GetConnectionString("AuthDb"));
+            
+            services.AddSingleton<ILogger>(logger);
+            services.AddScoped<IQueryFactory<ClientRegistration>>((serviceProvider) => clientRegistrationQueryFactory);
+
+            services.AddIdentityServer(options => 
+            {
+                options.IssuerUri = config["Identity:Issuer"];
+            })
+            .AddDeveloperSigningCredential()
+            .AddInMemoryApiResources(Config.GetApiResources(clientRegistrationQueryFactory).Result)
+            .AddInMemoryClients(Config.GetClients(clientRegistrationQueryFactory).Result)
+            .AddInMemoryPersistedGrants();
+            
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowClientOrigin",
+                builder => 
+                {
+                    builder.WithOrigins(config["Identity:Origin"])
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+            });
+
             services.AddControllers();
         }
 
@@ -35,8 +62,11 @@ namespace cov19.services.auth
             {
                 app.UseDeveloperExceptionPage();
             }
+            
+            app.UseCors("AllowClientOrigin");
+            app.UseIdentityServer();
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 
@@ -46,6 +76,16 @@ namespace cov19.services.auth
             {
                 endpoints.MapControllers();
             });
+        }
+
+        internal static IConfigurationRoot GetConfiguration()
+        {
+            return new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", false)
+                .AddJsonFile("appsettings.Development.json", true)
+                .AddEnvironmentVariables()
+                .Build();
         }
     }
 }

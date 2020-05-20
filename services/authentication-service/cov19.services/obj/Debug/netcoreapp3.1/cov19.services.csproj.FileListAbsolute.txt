@@ -1,0 +1,15 @@
+/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services/bin/Debug/netcoreapp3.1/cov19.services.deps.json
+/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services/bin/Debug/netcoreapp3.1/cov19.services.runtimeconfig.json
+/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services/bin/Debug/netcoreapp3.1/cov19.services.runtimeconfig.dev.json
+/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services/bin/Debug/netcoreapp3.1/cov19.services.dll
+/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services/bin/Debug/netcoreapp3.1/cov19.services.pdb
+/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services/bin/Debug/netcoreapp3.1/cov19.services.domain.dll
+/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services/bin/Debug/netcoreapp3.1/cov19.services.interfaces.dll
+/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services/bin/Debug/netcoreapp3.1/cov19.services.interfaces.pdb
+/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services/bin/Debug/netcoreapp3.1/cov19.services.domain.pdb
+/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services/obj/Debug/netcoreapp3.1/cov19.services.csprojAssemblyReference.cache
+/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services/obj/Debug/netcoreapp3.1/cov19.services.AssemblyInfoInputs.cache
+/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services/obj/Debug/netcoreapp3.1/cov19.services.AssemblyInfo.cs
+/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services/obj/Debug/netcoreapp3.1/cov19.services.csproj.CopyComplete
+/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services/obj/Debug/netcoreapp3.1/cov19.services.dll
+/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services/obj/Debug/netcoreapp3.1/cov19.services.pdb

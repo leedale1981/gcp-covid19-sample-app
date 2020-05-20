@@ -1,0 +1,8 @@
+/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services.domain/bin/Debug/netstandard2.0/cov19.services.domain.deps.json
+/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services.domain/bin/Debug/netstandard2.0/cov19.services.domain.dll
+/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services.domain/bin/Debug/netstandard2.0/cov19.services.domain.pdb
+/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services.domain/obj/Debug/netstandard2.0/cov19.services.domain.csprojAssemblyReference.cache
+/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services.domain/obj/Debug/netstandard2.0/cov19.services.domain.AssemblyInfoInputs.cache
+/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services.domain/obj/Debug/netstandard2.0/cov19.services.domain.AssemblyInfo.cs
+/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services.domain/obj/Debug/netstandard2.0/cov19.services.domain.dll
+/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services.domain/obj/Debug/netstandard2.0/cov19.services.domain.pdb
