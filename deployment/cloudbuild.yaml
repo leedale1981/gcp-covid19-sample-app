@@ -1,7 +1,7 @@
 steps:
   # Auth Service Image
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/cov19-sample-project/auth-service:latest', './services/authentication-service/cov19.services.auth']
+    args: ['build', '-t', 'gcr.io/cov19-sample-project/auth-service:latest', './services/authentication-service']
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/cov19-sample-project/auth-service:latest']
   # Deploy Kubernetes Auth Service Configuration

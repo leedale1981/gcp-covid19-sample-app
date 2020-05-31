@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services.interfaces/cov19.services.interfaces.csproj": {}
+    "D:\\src\\covid-sample-app\\services\\authentication-service\\cov19.services.interfaces\\cov19.services.interfaces.csproj": {}
   },
   "projects": {
-    "/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services.interfaces/cov19.services.interfaces.csproj": {
+    "D:\\src\\covid-sample-app\\services\\authentication-service\\cov19.services.interfaces\\cov19.services.interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services.interfaces/cov19.services.interfaces.csproj",
+        "projectUniqueName": "D:\\src\\covid-sample-app\\services\\authentication-service\\cov19.services.interfaces\\cov19.services.interfaces.csproj",
         "projectName": "cov19.services.interfaces",
-        "projectPath": "/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services.interfaces/cov19.services.interfaces.csproj",
-        "packagesPath": "/home/leedale/.nuget/packages/",
-        "outputPath": "/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services.interfaces/obj/",
+        "projectPath": "D:\\src\\covid-sample-app\\services\\authentication-service\\cov19.services.interfaces\\cov19.services.interfaces.csproj",
+        "packagesPath": "C:\\Users\\leeda\\.nuget\\packages\\",
+        "outputPath": "D:\\src\\covid-sample-app\\services\\authentication-service\\cov19.services.interfaces\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/leedale/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\leeda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,7 +60,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

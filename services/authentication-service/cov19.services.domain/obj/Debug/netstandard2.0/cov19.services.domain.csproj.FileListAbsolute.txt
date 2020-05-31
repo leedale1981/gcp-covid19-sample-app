@@ -6,3 +6,12 @@
 /mnt/d/src/covid-sample-app/services/authentication-service/cov19.services.domain/obj/Debug/netstandard2.0/cov19.services.domain.AssemblyInfo.cs
 /mnt/d/src/covid-sample-app/services/authentication-service/cov19.services.domain/obj/Debug/netstandard2.0/cov19.services.domain.dll
 /mnt/d/src/covid-sample-app/services/authentication-service/cov19.services.domain/obj/Debug/netstandard2.0/cov19.services.domain.pdb
+D:\src\covid-sample-app\services\authentication-service\cov19.services.domain\bin\Debug\netstandard2.0\cov19.services.domain.deps.json
+D:\src\covid-sample-app\services\authentication-service\cov19.services.domain\bin\Debug\netstandard2.0\cov19.services.domain.dll
+D:\src\covid-sample-app\services\authentication-service\cov19.services.domain\bin\Debug\netstandard2.0\cov19.services.domain.pdb
+D:\src\covid-sample-app\services\authentication-service\cov19.services.domain\obj\Debug\netstandard2.0\cov19.services.domain.csprojAssemblyReference.cache
+D:\src\covid-sample-app\services\authentication-service\cov19.services.domain\obj\Debug\netstandard2.0\cov19.services.domain.csproj.CoreCompileInputs.cache
+D:\src\covid-sample-app\services\authentication-service\cov19.services.domain\obj\Debug\netstandard2.0\cov19.services.domain.AssemblyInfoInputs.cache
+D:\src\covid-sample-app\services\authentication-service\cov19.services.domain\obj\Debug\netstandard2.0\cov19.services.domain.AssemblyInfo.cs
+D:\src\covid-sample-app\services\authentication-service\cov19.services.domain\obj\Debug\netstandard2.0\cov19.services.domain.dll
+D:\src\covid-sample-app\services\authentication-service\cov19.services.domain\obj\Debug\netstandard2.0\cov19.services.domain.pdb

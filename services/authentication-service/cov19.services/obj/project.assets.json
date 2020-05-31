@@ -2132,34 +2132,43 @@
     ]
   },
   "packageFolders": {
-    "/home/leedale/.nuget/packages/": {}
+    "C:\\Users\\leeda\\.nuget\\packages\\": {},
+    "D:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services/cov19.services.csproj",
+      "projectUniqueName": "D:\\src\\covid-sample-app\\services\\authentication-service\\cov19.services\\cov19.services.csproj",
       "projectName": "cov19.services",
-      "projectPath": "/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services/cov19.services.csproj",
-      "packagesPath": "/home/leedale/.nuget/packages/",
-      "outputPath": "/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services/obj/",
+      "projectPath": "D:\\src\\covid-sample-app\\services\\authentication-service\\cov19.services\\cov19.services.csproj",
+      "packagesPath": "C:\\Users\\leeda\\.nuget\\packages\\",
+      "outputPath": "D:\\src\\covid-sample-app\\services\\authentication-service\\cov19.services\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/home/leedale/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\leeda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services.domain/cov19.services.domain.csproj": {
-              "projectPath": "/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services.domain/cov19.services.domain.csproj"
+            "D:\\src\\covid-sample-app\\services\\authentication-service\\cov19.services.domain\\cov19.services.domain.csproj": {
+              "projectPath": "D:\\src\\covid-sample-app\\services\\authentication-service\\cov19.services.domain\\cov19.services.domain.csproj"
             },
-            "/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services.interfaces/cov19.services.interfaces.csproj": {
-              "projectPath": "/mnt/d/src/covid-sample-app/services/authentication-service/cov19.services.interfaces/cov19.services.interfaces.csproj"
+            "D:\\src\\covid-sample-app\\services\\authentication-service\\cov19.services.interfaces\\cov19.services.interfaces.csproj": {
+              "projectPath": "D:\\src\\covid-sample-app\\services\\authentication-service\\cov19.services.interfaces\\cov19.services.interfaces.csproj"
             }
           }
         }
@@ -2211,7 +2220,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

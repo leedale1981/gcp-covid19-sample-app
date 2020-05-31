@@ -6,3 +6,12 @@
 /mnt/d/src/covid-sample-app/services/authentication-service/cov19.services.interfaces/obj/Debug/netstandard2.0/cov19.services.interfaces.AssemblyInfo.cs
 /mnt/d/src/covid-sample-app/services/authentication-service/cov19.services.interfaces/obj/Debug/netstandard2.0/cov19.services.interfaces.dll
 /mnt/d/src/covid-sample-app/services/authentication-service/cov19.services.interfaces/obj/Debug/netstandard2.0/cov19.services.interfaces.pdb
+D:\src\covid-sample-app\services\authentication-service\cov19.services.interfaces\bin\Debug\netstandard2.0\cov19.services.interfaces.deps.json
+D:\src\covid-sample-app\services\authentication-service\cov19.services.interfaces\bin\Debug\netstandard2.0\cov19.services.interfaces.dll
+D:\src\covid-sample-app\services\authentication-service\cov19.services.interfaces\bin\Debug\netstandard2.0\cov19.services.interfaces.pdb
+D:\src\covid-sample-app\services\authentication-service\cov19.services.interfaces\obj\Debug\netstandard2.0\cov19.services.interfaces.csprojAssemblyReference.cache
+D:\src\covid-sample-app\services\authentication-service\cov19.services.interfaces\obj\Debug\netstandard2.0\cov19.services.interfaces.csproj.CoreCompileInputs.cache
+D:\src\covid-sample-app\services\authentication-service\cov19.services.interfaces\obj\Debug\netstandard2.0\cov19.services.interfaces.AssemblyInfoInputs.cache
+D:\src\covid-sample-app\services\authentication-service\cov19.services.interfaces\obj\Debug\netstandard2.0\cov19.services.interfaces.AssemblyInfo.cs
+D:\src\covid-sample-app\services\authentication-service\cov19.services.interfaces\obj\Debug\netstandard2.0\cov19.services.interfaces.dll
+D:\src\covid-sample-app\services\authentication-service\cov19.services.interfaces\obj\Debug\netstandard2.0\cov19.services.interfaces.pdb

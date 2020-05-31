@@ -17,6 +17,9 @@ spec:
       containers:
       - name: auth-service
         image: gcr.io/cov19-sample-project/auth-service
+        env: 
+        - name: Identity_Issuer
+          value: ${Identity_Issuer}
         ports:
         - containerPort: 80
 ---
