@@ -6,7 +6,7 @@ steps:
     args: ['push', 'gcr.io/cov19-sample-project/auth-service:latest']
   # Deploy Kubernetes Auth Service Configuration
   - name: 'gcr.io/cloud-builders/kubectl'
-    id: Deploy
+    id: Deploy-Auth-Web-Service
     args:
     - 'apply'
     - '-f'
@@ -20,7 +20,7 @@ steps:
       - 'Identity__Origin=$_IDENTITY_ORIGIN'
   # Deploy Kubernetes Auth Database Configuration
   - name: 'gcr.io/cloud-builders/kubectl'
-    id: Deploy
+    id: Deploy-Auth-Database-Service
     args:
     - 'apply'
     - '-f'
