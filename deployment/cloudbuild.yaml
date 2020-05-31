@@ -4,9 +4,9 @@ steps:
     args: [
       'build', 
       '-t', 'gcr.io/cov19-sample-project/auth-service:latest', 
-      '--build-arg', 'ConnectionStrings__AuthDb=${_AUTHDB_CONN_STRING}',
-      '--build-arg', 'Identity__Issuer=${_IDENTITY_ISSUER}',
-      '--build-arg', 'Identity__Origin=${_IDENTITY_ORIGIN}',
+      '--build-arg', 'AUTH_DB_CONNECTION_STRING=${_AUTHDB_CONN_STRING}',
+      '--build-arg', 'IDENTITY_ISSUER=${_IDENTITY_ISSUER}',
+      '--build-arg', 'IDENTITY_ORIGIN=${_IDENTITY_ORIGIN}',
       './services/authentication-service'
     ]
   - name: 'gcr.io/cloud-builders/docker'

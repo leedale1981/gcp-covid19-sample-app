@@ -1,9 +1,9 @@
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build-env
 WORKDIR /app
 
-ARG ConnectionStrings__AuthDb
-ARG Identity__Issuer
-ARG Identity__Origin
+ARG AUTH_DB_CONNECTION_STRING
+ARG IDENTITY_ISSUER
+ARG IDENTITY_ORIGIN
 
 # Copy csproj and restore as distinct layers
 COPY . ./
@@ -17,8 +17,8 @@ FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
 WORKDIR /app
 COPY --from=build-env /app/out .
 
-ENV ConnectionStrings__AuthDb=$ConnectionStrings__AuthDb
-ENV Identity__Issuer=$Identity__Issuer
-ENV Identity__Origin=$Identity__Origin
+ENV ConnectionStrings__AuthDb=$AUTH_DB_CONNECTION_STRING
+ENV Identity__Issuer=$IDENTITY_ISSUER
+ENV Identity__Origin=$IDENTITY_ORIGIN
 
 ENTRYPOINT ["dotnet", "cov19.services.auth.dll"]
