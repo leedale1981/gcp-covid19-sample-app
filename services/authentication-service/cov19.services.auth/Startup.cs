@@ -1,5 +1,4 @@
 using System.IO;
-using System.Threading.Tasks;
 using COV19.Services.Data.Factories;
 using COV19.Services.Domain;
 using COV19.Services.Interfaces;
