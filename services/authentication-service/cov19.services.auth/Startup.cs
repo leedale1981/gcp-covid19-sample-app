@@ -1,3 +1,5 @@
+using Internal;
+using System;
 using System.IO;
 using COV19.Services.Data.Factories;
 using COV19.Services.Domain;
@@ -25,6 +27,9 @@ namespace COV19.Services.Auth
         {
             ILogger logger = new LoggerConfiguration().WriteTo.Console().CreateLogger();
             IConfigurationRoot config = Startup.GetConfiguration();
+            Console.WriteLine("Environment Vars:");
+            Console.WriteLine(Environment.GetEnvironmentVariables());
+            Console.WriteLine($"Connection String Config: {config.GetConnectionString("AuthDb")}");
             IQueryFactory<ClientRegistration> clientRegistrationQueryFactory = new ClientRegistrationQueryFactory(
                 logger, config.GetConnectionString("AuthDb"));
             
