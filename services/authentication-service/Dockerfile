@@ -13,4 +13,6 @@ FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
 WORKDIR /app
 COPY --from=build-env /app/out .
 
+ENV ConnectionStrings__AuthDb=$ConnectionStrings__AuthDb
+
 ENTRYPOINT ["dotnet", "cov19.services.auth.dll"]
