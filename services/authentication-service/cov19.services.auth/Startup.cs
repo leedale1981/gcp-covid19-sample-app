@@ -27,7 +27,11 @@ namespace COV19.Services.Auth
             ILogger logger = new LoggerConfiguration().WriteTo.Console().CreateLogger();
             IConfigurationRoot config = Startup.GetConfiguration();
             Console.WriteLine("Environment Vars:");
-            Console.WriteLine(Environment.GetEnvironmentVariables());
+            foreach (string key in Environment.GetEnvironmentVariables().Keys)
+            {
+                Console.WriteLine($"{key}:{Environment.GetEnvironmentVariable(key)}");
+            }
+        
             Console.WriteLine($"Connection String Config: {config.GetConnectionString("AuthDb")}");
             IQueryFactory<ClientRegistration> clientRegistrationQueryFactory = new ClientRegistrationQueryFactory(
                 logger, config.GetConnectionString("AuthDb"));
