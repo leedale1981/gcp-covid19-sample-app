@@ -18,6 +18,8 @@ spec:
       - name: auth-service
         image: gcr.io/cov19-sample-project/auth-service
         env: 
+        - name: ConnectionString__AuthDb
+          value: ${ConnectionStrings__AuthDb}
         - name: Identity_Issuer
           value: ${Identity_Issuer}
         ports:
