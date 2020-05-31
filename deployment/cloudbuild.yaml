@@ -1,7 +1,14 @@
 steps:
   # Auth Service Image
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/cov19-sample-project/auth-service:latest', './services/authentication-service']
+    args: [
+      'build', 
+      '-t', 'gcr.io/cov19-sample-project/auth-service:latest', 
+      '--build-arg', 'ConnectionStrings__AuthDb=$_AUTHDB_CONN_STRING',
+      '--build-arg', 'Identity__Issuer=$_IDENTITY_ISSUER',
+      '--build-arg', 'Identity__Origin=$_IDENTITY_ORIGIN',
+      './services/authentication-service'
+    ]
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/cov19-sample-project/auth-service:latest']
   # Deploy Kubernetes Auth Service Configuration
@@ -15,9 +22,6 @@ steps:
       - 'CLOUDSDK_COMPUTE_REGION=europe-west2-a'
       - 'CLOUDSDK_COMPUTE_ZONE=europe-west2-a'
       - 'CLOUDSDK_CONTAINER_CLUSTER=c19-sample-web-services-cluster'
-      - 'ConnectionStrings__AuthDb=$_AUTHDB_CONN_STRING'
-      - 'Identity__Issuer=$_IDENTITY_ISSUER'
-      - 'Identity__Origin=$_IDENTITY_ORIGIN'
   # Deploy Kubernetes Auth Database Configuration
   - name: 'gcr.io/cloud-builders/kubectl'
     id: Deploy-Auth-Database-Service

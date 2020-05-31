@@ -17,13 +17,6 @@ spec:
       containers:
       - name: auth-service
         image: gcr.io/cov19-sample-project/auth-service
-        env: 
-        - name: ConnectionString__AuthDb
-          value: $_AUTHDB_CONN_STRING
-        - name: Identity_Issuer
-          value: $_IDENTITY_ISSUER
-        - name: Identity_Origin
-          value: $_IDENTITY_ORIGIN
         ports:
         - containerPort: 80
 ---
