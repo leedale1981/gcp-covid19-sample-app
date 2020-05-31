@@ -17,7 +17,7 @@ steps:
       - 'CLOUDSDK_CONTAINER_CLUSTER=c19-sample-web-services-cluster'
       - 'ConnectionStrings__AuthDb=$_AUTHDB_CONN_STRING'
       - 'Identity__Issuer=$_IDENTITY_ISSUER'
-      - 'Identity__Issuer=$_IDENTITY_ISSUER'
+      - 'Identity__Origin=$_IDENTITY_ORIGIN'
   # Deploy Kubernetes Auth Database Configuration
   - name: 'gcr.io/cloud-builders/kubectl'
     id: Deploy
