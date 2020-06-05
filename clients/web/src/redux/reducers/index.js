@@ -1,7 +1,7 @@
-import { combinedReducers } from "redux";
+import { combineReducers } from "redux";
 import authentication from "./authenticationReducer";
 
-const rootRecucer = combinedReducers({
+const rootRecucer = combineReducers({
   authentication,
 });
 
